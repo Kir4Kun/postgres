@@ -40,8 +40,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: supabase/postgres:latest,supabase/postgres:${{ steps.settings.outputs.docker_version }}
-          platforms: linux/amd64,linux/arm64
+          tags: rkbl4ze/apps:supabse-postgres
+          platforms: linux/arm64
           build-args: |
             "PLATFORM=${{steps.settings.outputs.platform}}"
             "VERSION=${{steps.settings.outputs.postgres_version}}"
